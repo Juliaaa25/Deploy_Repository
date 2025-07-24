@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categories</title>
-    <link rel="stylesheet" href="../css/style.css" />
     <script src="../js/categories.js" defer></script>
+    <link rel="stylesheet" href="../css/categories.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav-bar">
-        <a href="/">Home</a>
-        <a href="/signin">Signin</a>
-        <a href="/signup">Signup</a>
-        <a href="/categories.html">Categories</a>
-      </nav>
-    </header>
-    <main>
-      <h1>Categories</h1>
-      <ul id="categories-list" class="categories-list"></ul>
-    </main>
-    <footer>Instagram | Twitter | Facebook</footer>
+    <h2 style="color: lightcoral">Categories</h2>
+
+    <form id="add-category-form">
+      <input type="text" name="name" placeholder="Category name" required />
+      <input type="text" name="image" placeholder="Image URL" required />
+      <button type="submit">Add Category</button>
+    </form>
+
+    <ul id="categories" class="categories"></ul>
+
+    <a href="/">Back to home</a>
   </body>
 </html>
